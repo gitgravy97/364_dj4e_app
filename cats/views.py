@@ -22,8 +22,7 @@ class MainView(LoginRequiredMixin, View) :
 class CatCreate(LoginRequiredMixin,CreateView):
     model = Cat
     fields = '__all__'
-    #success_url = reverse_lazy('cats')
-    success_url = "http://mccoy-doherty.tech/"
+    success_url = reverse_lazy('cats')
 
 class CatUpdate(LoginRequiredMixin, UpdateView):
     model = Cat
