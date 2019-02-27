@@ -7,8 +7,8 @@
         {% for cat in cat_list %}
         <li>
             {{ cat.nickname }} ({{ cat.breed }})
-            (<a href="{% url 'cat_update' auto.id %}">Update</a> |
-            <a href="{% url 'cat_delete' auto.id %}">Delete</a>) <br/>
+            (<a href="{% url 'cat_update' cat.id %}">Update</a> |
+            <a href="{% url 'cat_delete' cat.id %}">Delete</a>) <br/>
         </li>
         {% endfor %}
     </ul>
