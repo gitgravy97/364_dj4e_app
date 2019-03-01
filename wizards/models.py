@@ -8,7 +8,7 @@ class House(models.Model):
         validators=[MinLengthValidator(2, "House must be greater than 1 character")]
     )
 
-    def __str(self):
+    def __str__(self):
         return self.name
 
 class Wizard(models.Model):
