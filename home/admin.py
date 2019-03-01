@@ -1,8 +1,7 @@
 from django.contrib import admin
 
-from autos.models import Make, Auto
-
+from wizards.models import Wizard, House
 # Register your models here.
 
-admin.site.register(Make)
-admin.site.register(Auto)
+admin.site.register(Wizard)
+admin.site.register(House)
