@@ -4,7 +4,7 @@
 
 <h1>Delete House</h1>
 
-<p>Are you sure you want to delete the house: {{ house }}?</p>
+<p>Are you sure you want to delete the house: {{ house.name }}?</p>
 
 <form action="" method="POST">
   {% csrf_token %}
